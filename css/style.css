@@ -3,7 +3,7 @@ Colors used:
 (light green): #EFF5EE;
 (medium green): #C1DFC4:
 */
-<style>
+
   body{
     background-color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
@@ -93,5 +93,9 @@ a:focus {
   background-color: #0D3120;
   color: #ffffff;
 }
-
-</style>
+header {
+  background-color: #DEF2eb;
+  padding: 20px;
+  margin: 20px;
+}
+border-bottom: 10px solid #4a4a4a;
