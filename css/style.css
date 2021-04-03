@@ -233,21 +233,21 @@ main {
 main {
   padding-top: 180px;
 }
-#about h1{
+
+#about-page h1{
+  text-align: center;
+}
+
+#mystory h2{
+  text-align: center;
+}
+
+#skillstools h2{
   text-align: center;
 }
 
 
-#mystory .row {
-   text-align: center;
- }
 
-
-#skillstools {
-
-    border-bottom: 1px solid #4a4a4a;
-
- }
 
 #endpanel h2{
   text-align: center;
@@ -257,3 +257,90 @@ main {
    padding-bottom: 25px;
     border-bottom: 1px solid #4a4a4a;
  }
+
+ [class*="col-"] {
+   float: left;
+   padding:0 10px;
+ }
+
+ .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+ /* ==============================
+ Medium devices (640px and larger)
+ ================================= */
+ @media only screen and (min-width: 640px) {
+
+
+header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 133px;
+  }
+
+  .col-md-6 {
+  width: 50%;
+}
+
+#about-page h3{
+  text-align: unset;
+   margin-top: 0;
+}
+
+}
+
+ }
+
+ /* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+  .col-lg-7 {
+  width: 58.33%;
+  }
+  .col-lg-5 {
+  width: 41.66%;
+  }
+
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+    font-size: 18px; /* Sets the font size to 16px */
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+  body {
+    font-size: 18px; /* Sets the font size to 16px */
+  }
+
+}
