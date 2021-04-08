@@ -8,6 +8,11 @@ Colors used:
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
   body{
     background-color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
@@ -108,8 +113,6 @@ a:focus {
   padding: 0 15px;
 }
 
-
-
 #work .row {
 
     border-bottom: 1px solid #4a4a4a;
@@ -136,13 +139,13 @@ a:focus {
 }
 
  .logo {
-   max-width: 250px;
+   max-width: 150px;
+   text-align: center;
  }
 
  header {
    width: 100%;
    background-color: #def2eb;
-   text-align: center;
    padding: 10px 0;
    border-bottom: 2px solid #def2eb;
    position: fixed;
@@ -152,18 +155,28 @@ box-shadow:         0px 5px 10px 0px rgba(50, 50, 50, 0.39);
 
  }
 
- nav > ul {
+ .navtoggle li:not(:last-child) {
+   display: none;
+ }
+
+ .navtoggle.responsive li  {
+  display: block;
+}
+
+
+
+
+ nav>ul {
   list-style-type: none;
   padding: 0;
-  width: 100%
+  margin: 0;
 }
 
-nav > ul > li {
+
+
+nav>ul>li>a {
   display: inline-block;
-}
-
-nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 7px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
@@ -190,7 +203,7 @@ nav>ul>li>a:focus {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: ##3b6f9c;
 }
 
 nav>ul>li>a:active {
@@ -201,6 +214,31 @@ nav>ul>li>a:active {
   color: #4a4a4a;
 }
 
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+ position: absolute;
+ right: 0;
+ top: 2px;
+ font-size: 20px;
+
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #4a4a4a;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 #hero {
   background-color: #def2eb;
   padding: 60px 0;
@@ -209,7 +247,7 @@ nav>ul>li>a:active {
 }
 
 main {
-  padding-top: 133px;
+  padding-top:85px;
 }
 
 #footer {
@@ -230,9 +268,7 @@ main {
   width: 100%;
 }
 
-main {
-  padding-top: 180px;
-}
+
 
 #about-page h1{
   text-align: center;
@@ -307,6 +343,9 @@ main {
   */
  @media only screen and (min-width: 640px) {
 
+   .logo {
+     max-width: 250px;
+   }
 
 header {
     text-align: unset;
@@ -318,6 +357,19 @@ header {
     float: right;
     margin-top: 4px;
   }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
+  nav>ul>li {
+  display: inline-block;
+  margin: 1em 0;
+}
 
   main {
     padding-top: 133px;
