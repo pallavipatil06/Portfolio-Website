@@ -392,6 +392,10 @@ main {
     text-align: unset;
     padding: 20px 0 13px;
   }
+
+  #skillstools h2 {
+    text-align: unset;
+  }
 }
 
 /*
