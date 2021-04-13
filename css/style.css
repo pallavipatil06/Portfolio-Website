@@ -161,11 +161,11 @@ header {
   box-shadow: 0 5px 10px 0 rgba(50, 50, 50, 0.39);
 }
 
-.navtoggle li:not(:last-child) {
+.navToggle li:not(:last-child) {
   display: none;
 }
 
-.navtoggle.responsive li {
+.navToggle.responsive li {
   display: block;
 }
 
@@ -215,29 +215,29 @@ nav > ul > li > a:active {
   color: #4a4a4a;
 }
 
-.navtoggle,
-.navtoggle.responsive {
+.navToggle,
+.navToggle.responsive {
   position: relative;
 }
 
-.navtoggle li .icon {
+.navToggle li .icon {
   position: absolute;
   right: 0;
   top: 2px;
   font-size: 20px;
 }
 
-.navtoggle.responsive nav {
+.navToggle.responsive nav {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li {
+.navToggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid #4a4a4a;
 }
 
-.navtoggle.responsive li:last-child {
+.navToggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -347,17 +347,26 @@ main {
     margin-top: 4px;
   }
 
-  .navtoggle li:not(:last-child) {
+  .navToggle li:not(:last-child) {
     display: inline-block;
   }
 
-  .navtoggle li:last-child {
+  .navToggle li:last-child {
     display: none;
   }
 
   nav > ul > li {
     display: inline-block;
     margin: 1em 0;
+  }
+
+  .navToggle.responsive li {
+    padding: 0;
+    border-top: none;
+  }
+
+  .navToggle.responsive li:last-child {
+    padding: 0;
   }
 
   main {
