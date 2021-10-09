@@ -1,7 +1,7 @@
 /*
 Colors used:
-(light green): #EFF5EE;
-(medium green): #C1DFC4:
+(Mauve): #6f3e58;
+(offwhite): #F8EDE6:
 */
 
 * {
@@ -13,45 +13,75 @@ html {
 }
 
 body {
-  background-color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  background-color: #6f3e58;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 400; /* Sets the font weight to 400 */
+  font-weight: 600; /* Sets the font weight to 400 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #0d3120;
+  color: #f8ede6;
 }
 
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6,
+h7, {
   line-height: 1.4;
 }
 
 h1 {
-  font-size: 1.602em;
-  font-weight: 700;
+  font-family: 'Shrikhand';
+  font-size: 1.905em;
+  font-weight: 200;
+  color: #f8ede6;
 }
 
 h2 {
-  font-size: 1.424em;
-  font-weight: 700;
+  font-family: 'Roboto';
+  font-size: 1.602em;
+  font-weight: 400;
+  color: #f19837;
 }
 
 h3 {
-  font-size: 1.424em;
-  font-weight: 600;
+  font-size: 1.2em;
+  font-weight: 900;
+  color: #f19837;
 }
 
 h4 {
   font-size: 1em;
   font-weight: 400;
+  color: #f19837;
 }
 
-img { width: 100%; }
+h5 {
+  font-size: 0.75em;
+  font-weight: 400;
+  color: #f19837;
+}
+
+h6 {
+  font-size: 1.602em;
+  font-weight: 500;
+  color: #411e64;
+}
+
+h7 {
+  font-size: 1.2em;
+  font-weight: 900;
+  color: #411e64;
+}
+
+img {
+  width: 80%;
+  padding-top: 20px 0;
+}
 
 a {
-  color: #0d3120;
+  color: #411e64;
   text-decoration: none; /* No underlining */
 }
 
@@ -65,7 +95,7 @@ a:hover {
 }
 
 a:active { /* selected link */
-  color: #7fb19b;
+  color: #411e64;
 }
 
 a:focus {
@@ -75,13 +105,13 @@ a:focus {
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #0d3120;
+  background-color: #f19837;
   color: #fff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   margin: 25px 0;
   border-radius: 3px;
-  border-bottom: 2px solid #7fb19b; /* width of the border, type, color */
+  border-bottom: 2px solid #411e64; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -92,26 +122,26 @@ a:focus {
 
 .button.contact {
   background-color: transparent;
-  color: #0d3120;
+  color: #411e64;
   text-transform: uppercase;
-  border: 2px solid #0d3120;
-  margin: 25px 0;
+  border: 2px solid #411e64;
+  margin: 10px;
 }
 
 .button.contact:hover {
-  background-color: #0d3120;
+  background-color: #411e64;
   color: #fff;
 }
 
 .button.resume {
   background-color: transparent;
-  color: #0d3120;
+  color: #411e64;
   text-transform: uppercase;
-  border: 2px solid #0d3120;
+  border: 2px solid #411e64;
 }
 
 .button.resume:hover {
-  background-color: #0d3120;
+  background-color: #411e64;
   color: #fff;
 }
 
@@ -122,7 +152,7 @@ a:focus {
 }
 
 #work .row {
-  border-bottom: 1px solid #4a4a4a;
+  border-bottom: 1px solid #f19837;
 }
 
 .center {
@@ -130,31 +160,37 @@ a:focus {
 }
 
 #hero h1 {
-  text-align: center;
+  text-align: unset;
 }
 
 #work h2 {
-  text-align: center;
+  text-align: unset;
 }
 
 #contact {
-  background-color: #def2eb;
-  padding: 25px 0;
+  background-color: #6f3e58;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#donate {
+  background-color: #f8ede6;
   display: inline-block;
   width: 100%;
   text-align: center;
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 100px;
   text-align: center;
 }
 
 header {
   width: 100%;
-  background-color: #def2eb;
+  background-color: #f19837;
   padding: 10px 0;
-  border-bottom: 2px solid #def2eb;
+  border-bottom: 2px solid #f19837;
   position: fixed;
   -webkit-box-shadow: 0 5px 10px 0 rgba(50, 50, 50, 0.39);
   -moz-box-shadow: 0 5px 10px 0 rgba(50, 50, 50, 0.39);
@@ -180,7 +216,7 @@ nav > ul > li > a {
   padding: 0 7px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #411e64;
 }
 
 nav > ul > li > a:visited {
@@ -188,7 +224,7 @@ nav > ul > li > a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #411e64;
 }
 
 nav > ul > li > a:hover {
@@ -196,7 +232,7 @@ nav > ul > li > a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #411e64;
 }
 
 nav > ul > li > a:focus {
@@ -212,7 +248,7 @@ nav > ul > li > a:active {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #411e64;
 }
 
 .navToggle,
@@ -242,7 +278,7 @@ nav > ul > li > a:active {
 }
 
 #hero {
-  background-color: #def2eb;
+  background-color: #f19837;
   padding: 60px 0;
   display: inline-block;
   width: 100%;
@@ -264,7 +300,7 @@ main {
 }
 
 #about.row {
-  background-color: #def2eb;
+  background-color: #f19837;
   padding: 60px 0;
   display: inline-block;
   width: 100%;
@@ -278,62 +314,13 @@ main {
   text-align: center;
 }
 
-#skillstools h2 {
-  text-align: center;
-}
-
-#endpanel h2 {
-  text-align: center;
-}
-
-#endpanel {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #4a4a4a;
-}
-
-/* Animation
-*/
-
-.berlin-illustration {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-@keyframes color-change {
-  0% { fill: #edc655; }
-  50% { fill: #fcffad; }
-  100% { fill: #f76414; }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from { transform: translate(0, 50px); }
-  to { transform: translate(200px, 50px); }
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from { transform: translate(446px, 48px); }
-  to { transform: translate(100px, 48px); }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
 
 /*
  Medium devices (640px and larger)
   */
 @media only screen and (min-width: 640px) {
   .logo {
-    max-width: 250px;
+    max-width: 400px;
   }
 
   header {
@@ -393,17 +380,13 @@ main {
   }
 
   #about-page h1 {
-    text-align: unset;
+    text-align: center;
     padding: 20px 0 13px;
   }
 
   #mystory h2 {
     text-align: unset;
     padding: 20px 0 13px;
-  }
-
-  #skillstools h2 {
-    text-align: unset;
   }
 }
 
@@ -422,6 +405,7 @@ Large devices (1024px or larger)
   [class*="col-"] {
     float: left;
     padding-right: 40px;
+    padding-top: 60px;
   }
 
   .row::after {
